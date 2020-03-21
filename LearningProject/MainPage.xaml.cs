@@ -22,35 +22,10 @@ namespace LearningProject
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        int i = 0;
         public MainPage()
         {
             this.InitializeComponent();
-            Button button1 = new Button();
-            button1.Content = "Нажми меня ,крошка!";
-            button1.Width = 200;
-            button1.Height = 40;
-            button1.HorizontalAlignment = HorizontalAlignment.Center;
-            button1.Click += button_Click;
-            layoutGrid.Children.Add(button1);
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            i++;
-            Button button = sender as Button;
-            button.Content = $"О да! {i}";
-        }
-    }
-
-    public class Phone
-    {
-        public string Name { get; set; }
-        public int Price { get; set; }
-
-        public override string ToString()
-        {
-            return $"Смартфон {this.Name}; цена: {this.Price}";
-        }
     }
 }

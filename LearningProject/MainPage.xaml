@@ -8,11 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="layoutGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="messageButton" Width="250" Height="40" HorizontalAlignment="Right">
-            <Button.Content>
-                <local:Phone Name="Lumia 950" Price="700" />
-            </Button.Content>
-        </Button>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Button Content="Right" Width="100" Height="50"  HorizontalAlignment="Right"></Button>
+            <Button Content="Left" Width="100" Height="50"  HorizontalAlignment="Left"></Button>
+            <Button Content="Center" Width="100" Height="50"  HorizontalAlignment="Center"></Button>
+            <Button Content="Stretch" HorizontalAlignment="Stretch" Margin="10 100 10 0"></Button>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Button Content="Top" Width="100" Height="50"  VerticalAlignment="Top"  Margin="10 0 0 0"></Button>
+            <Button Content="Bottom" Width="100" Height="50" VerticalAlignment="Bottom" Margin="10 0 0 0"></Button>
+            <Button Content="Center" Width="100" Height="50"  VerticalAlignment="Center" Margin="10 0 0 0"></Button>
+            <Button Content="Stretch" VerticalAlignment="Stretch" Margin="200 0 0 0"></Button>
+        </Grid>
     </Grid>
 </Page>
