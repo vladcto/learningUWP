@@ -15,16 +15,35 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0">
-            <Button Content="Right" Width="100" Height="50"  HorizontalAlignment="Right"></Button>
-            <Button Content="Left" Width="100" Height="50"  HorizontalAlignment="Left"></Button>
-            <Button Content="Center" Width="100" Height="50"  HorizontalAlignment="Center"></Button>
-            <Button Content="Stretch" HorizontalAlignment="Stretch" Margin="10 100 10 0"></Button>
+            <StackPanel>
+                <CheckBox x:ConnectionId='6' x:Name="checkBox1" IsChecked="False" IsThreeState="True" Content="Неотмечено" />
+                <CheckBox x:ConnectionId='7' x:Name="checkBox2" IsChecked="True" Content="Отмечено" />
+                <CheckBox x:ConnectionId='8' x:Name="checkBox3" IsChecked="{x:Null}" IsThreeState="True" Content="Неопределено"/>
+                <RadioButton GroupName="phones" Content="iPhone 6s Plus" IsChecked="True" />
+                <RadioButton GroupName="phones" Content="Nexus 6P" />
+                <RadioButton GroupName="phones" Content="Lumia 950 XL" />
+                <ToggleSwitch IsOn="True" Header="On/Off" OnContent="Включено" OffContent="Выключено" />
+                <CalendarDatePicker x:ConnectionId='9' x:Name="calendar" PlaceholderText="Выберите дату" CalendarIdentifier="GregorianCalendar" />
+            </StackPanel>
         </Grid>
         <Grid Grid.Column="1">
-            <Button Content="Top" Width="100" Height="50"  VerticalAlignment="Top"  Margin="10 0 0 0"></Button>
-            <Button Content="Bottom" Width="100" Height="50" VerticalAlignment="Bottom" Margin="10 0 0 0"></Button>
-            <Button Content="Center" Width="100" Height="50"  VerticalAlignment="Center" Margin="10 0 0 0"></Button>
-            <Button Content="Stretch" VerticalAlignment="Stretch" Margin="200 0 0 0"></Button>
+            <StackPanel HorizontalAlignment="Center" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <CalendarView x:ConnectionId='2' x:Name="calendarView" SelectionMode="Multiple" SelectedBorderBrush="Red"
+                    SelectedForeground="LightPink"  />
+                <TextBlock x:ConnectionId='3' x:Name="textBlock1" />
+                <Button Content="Жми" HorizontalAlignment="Center">
+                    <Button.Flyout>
+                        <Flyout x:ConnectionId='4' x:Name="message">
+                            <Flyout.Content>
+                                <StackPanel>
+                                    <TextBlock Text="Нажал!"></TextBlock>
+                                    <Button x:ConnectionId='5'                      Content="OK" Margin="0 10 0 0"/>
+                                </StackPanel>
+                            </Flyout.Content>
+                        </Flyout>
+                    </Button.Flyout>
+                </Button>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

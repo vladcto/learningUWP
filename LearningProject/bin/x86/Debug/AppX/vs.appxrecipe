@@ -30,13 +30,13 @@
     <AppXManifest Include="G:\Projects\LearningProject\LearningProject\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-03-21T20:54:52.150</Modified>
+      <Modified>2020-03-22T11:44:46.338</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="G:\Projects\LearningProject\LearningProject\bin\x86\Debug\LearningProject.exe">
       <PackagePath>entrypoint\LearningProject.exe</PackagePath>
-      <Modified>2020-03-21T20:54:51.570</Modified>
+      <Modified>2020-03-22T11:44:45.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -86,15 +86,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Projects\LearningProject\LearningProject\bin\x86\Debug\LearningProject.xr.xml">
       <PackagePath>LearningProject.xr.xml</PackagePath>
-      <Modified>2020-03-21T20:54:51.333</Modified>
+      <Modified>2020-03-22T11:38:28.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Projects\LearningProject\LearningProject\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-03-21T20:54:51.338</Modified>
+      <Modified>2020-03-22T11:44:45.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Projects\LearningProject\LearningProject\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-03-21T20:54:51.338</Modified>
+      <Modified>2020-03-22T11:44:45.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -106,7 +106,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="G:\Projects\LearningProject\LearningProject\bin\x86\Debug\Core\LearningProject.exe">
       <PackagePath>LearningProject.exe</PackagePath>
-      <Modified>2020-03-21T20:54:52.145</Modified>
+      <Modified>2020-03-22T11:44:46.335</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

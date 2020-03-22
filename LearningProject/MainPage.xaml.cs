@@ -27,5 +27,9 @@ namespace LearningProject
             this.InitializeComponent();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            message.Hide();
+        }
     }
 }
